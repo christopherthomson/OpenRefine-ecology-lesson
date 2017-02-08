@@ -7,10 +7,15 @@ minutes:
 
 # Learning Objectives
 
-* Describe OpenRefine’s uses and applications.
-* Differentiate data cleaning from data organization.
-* Experiment with OpenRefine’s user interface.
-* Locate helpful resources to learn more about OpenRefine.
+* Create an Open Refine project
+* View, sort and summarize data
+* Use clustering methods to clean data
+* View project history, undo/redo, and export steps to create a repeatable workflow
+* Split values from one column into multiple columns
+* Remove whitespace or unwanted characters
+* Apply Python scripts to your data within Open Refine
+* Augment or reconcile data using a web service from within Open Refine
+* Customise how you export your data  
 
 ----------------------------------------------------
 
