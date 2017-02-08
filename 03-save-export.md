@@ -5,14 +5,6 @@ title: Working with Open Refine
 minutes: 
 ---
 
-# Learning Objectives
-
-* Save an OpenRefine project.
-* Export cleaned data from an OpenRefine project.
-
-
-----------------------------------------------------
-
 # Lesson
 
 ## Saving and Exporting a Project
@@ -26,26 +18,24 @@ open it up again and be just where you left off.
 By default OpenRefine is saving your project. If you close OpenRefine and open it up again,
 you'll see a list of your projects. You can click on any one of them to open it up again.
 
-### Exporting
+### Exporting your project
 
-You can also export a project, for instance if you wanted to send it to someone else. 
-
-````
-  - Go to the 'Export' button in the top right. Click 'Export project'. This will save a compressed file that you can then open in OpenRefine that contains all the data and steps. 
-````
+You can export a project, for instance if you wanted to send it to someone else, or put it under version control.
 
 ## Exporting Cleaned Data 
 
-Save your work when you are done by exporting it in the desire format. Save your files with meaningful names, no spaces. Refine does not change your original dataset (hooray!).
+Export your cleaned data when you are done by exporting it in the desired format. Save your files with meaningful names, no spaces. Refine does not change your original dataset (hooray!). Let's look at the many formats Open Refine can produce:
 
-````
-  - Go to 'Export' in the top right. Click on the file type you want to export the data in. 'Tab-separated values' or 'Comma-separated values' would be good choices. 
-````
+  * TSV / CSV file (good for data exchange / preservation)
+  * Excel / Open/Libre Office
+  * Linked Open Data eg RDF triples
+  * Custom tabular (note you can save Option code for automation)
+  * Custom template
 
-That file will get
-exported to your default Download directory. That file can then be eaily opened in a 
-spreadsheet program
-or imported into programs like R or Python.
+### Practice
+  - Go to the 'Export' button in the top right. Click 'Export project'. This will save a compressed file that you can then open in OpenRefine that contains all the data and steps. Try opening new Open Refine tab and importing this project. You can close the tab once you've confirmed it works.
+- Use the custom tabular exporter to export the columns 'survey_id', 'recordID' and 'species' in TSV format, ensuring the 'recordID' is the first (ie leftmost) column. View these in a text editor (or use ```cat somefile.tsv``` in bash to check the output.
+- Put up a green sticker when you're done.
 
 
 Previous: [Scripts](02-scripts.html) Optional Next: [Services in OpenRefine](04-services.html)
