@@ -20,12 +20,13 @@ Note: this is demo data, cobbled together from a couple of sources. Do not use f
 
 **Once Refine is open, you'll be asked if you want to Create, Open, or Import a Project.**
 
-  To create a project,
-  - click Create... and it will bring you to "Get data from this computer."
-  - Click Browse, find Portal_rodents_19772002_scinameUUIDs.csv
-  - Click next to open Portal_rodents_19772002_scinameUUIDs.csv
-  - Refine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click "update preview."
-  - If all looks well, click _Create Project._
+To create a project,
+
+- click Create... and it will bring you to "Get data from this computer."
+- Click Browse, find Portal_rodents_19772002_scinameUUIDs.csv
+- Click next to open Portal_rodents_19772002_scinameUUIDs.csv
+- Refine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click "update preview."
+- If all looks well, click _Create Project._
 
 ## Faceting
 
@@ -92,7 +93,7 @@ Step by step:
 - You'll get two extra columns called, in this case: scientificName 1, scientificName 2
 - However, it will reveal a problem in a few names that have spaces at the beginning (so-called leading white space), causing unwanted additional columns to be created.
 - To Undo create columns, look just above the scientificName cluster in the left side of the screen. Click where it says Undo / Redo. Click back one step (all steps, all changes are saved here). Just go back to the previous step and click. The extra columns will be gone.
-- The leading whitespaces can be easily removed with another Refine feature in the column drop-down choices. Select: Edit cells > Common transforms > Remove leading and trailing whitespace
+- The leading whitespaces can be easily removed with another Refine feature in the column drop-down choices. Select: **Edit cells > Common transforms > Remove leading and trailing whitespace**
 - Check the result looks right!
 
 Previous: [Getting Started with OpenRefine](00-getting-started.html)  Next: [Scripts from OpenRefine](02-scripts.html)
