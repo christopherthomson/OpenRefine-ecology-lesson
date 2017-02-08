@@ -46,7 +46,7 @@ We then have a flag, and we can facet the column to get only the longer or short
 
 ### Join data from multiple columns
 
-As another example, we can use a Python program to join the date column from dy, mo, yr. Note: OpenRefine's wiki has good documentation for doing this using GREL (Google Refine Expression Language), it's a bit hit and miss for Python or Clojure).
+As another example, we can use a Python program to join the date column from dy, mo, yr. Note: [OpenRefine's wiki](https://github.com/OpenRefine/OpenRefine/wiki) has good documentation for doing this using GREL (Google Refine Expression Language), it's a bit hit and miss for Python or Clojure).
 
 Select the 'mo' - month column
 
