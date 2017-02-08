@@ -16,20 +16,20 @@ For this lesson, we will use the Google Geocoding API (application programming i
 
 * Name that column something meaningful like 'county-state  '
 
-* Using the county-state column, create a new column named geocode that will store the responses from the web service. 
+* Using the county-state column, create a new column named 'geocode' that will store the responses from the web service. 
 
 * This code should be 
 ```http://maps.google.com/maps/api/geocode/json?sensor=false&address=" + escape(value, "url")```
 
 * Make sure to change the delay to something like 1500ms to 5000ms to keep the Google hounds at bay.
     
-* Now create a new column, latlng based on the geocode column, with code to parse the JSON as with(
+* Now create another new column, 'latlng', based on the new geocode column, with code to parse the JSON as follows:
 
 ```
 with(value.parseJson().results[0].geometry.location, pair, pair.lat +", " + pair.lng)
 ``` 
 
-Can you make sense of this code?
+Can you make sense of what this code is doing?
 
 ### Practice
 - Using the same method as above, create a latlng column for all the locations in Washington state.
