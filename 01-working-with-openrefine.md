@@ -5,18 +5,6 @@ title: Working with Open Refine
 minutes: 
 ---
 
-# Learning Objectives
-
-* Create a new OpenRefine project from a CSV file.
-* Recall what facets are and how they are used to sort and summarize data.
-* Recall what clustering is and how it is applied to group and edit typos.
-* Manipulate data using previous steps with undo/redo.
-* Employ drop-downs to split values from one column into multiple columns.
-* Employ drop-downs to remove white spaces from cells.
-
-
-----------------------------------------------------
-
 # Lesson
 
 ## Creating a Project
@@ -56,9 +44,10 @@ Typically, you create a facet on a particular column. The facet summarizes the c
   - In the left margin, you'll see a box containing every unique, distinct value in the scientificName column and Refine shows you how many times that value occurs in the column (a count), and allows you to sort (order) your facets by name or count.
   - Edit. Note that at any time, in any cell of the Facet box, or data cell in the Refine window, you have access to "edit" and can fix an error immediately. Refine will even ask you if you'd like to make that same correction to every value it finds like that one (or not).
 
+### Numeric facet
 All our data is currently text. But, we can convert our data to other datatypes and use facets specific to them.
-- Convert 'plot' to numeric: **> Edit Cells > Common Transforms... > To number**
-- Now we can use the Numeric Facet and get a quick chart of the frequency of samples in each plot.
+- Convert 'plot' to numeric: **> Edit Cells > Common Transforms... > To number**  
+- Using the dropdown on the 'plot' column, select 'Numeric Facet' get a quick chart of the frequency of samples in each plot. 
 
 ### Practice: Editing with Facets
 
