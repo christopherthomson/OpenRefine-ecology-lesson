@@ -62,6 +62,7 @@ Now we have more useful date information.
 
 * Let's convert our new date column to be a 'date' datatype
 * Now facet the data on the 'date' column using the Timeline facet
+* What was the date of the first record in 1978?
 * Put up a green sticker when you're done!
 
 Previous: [Working with OpenRefine](01-working-with-openrefine.html)  Next: [Saving and Exporting files and projects](03-save-export.html)
