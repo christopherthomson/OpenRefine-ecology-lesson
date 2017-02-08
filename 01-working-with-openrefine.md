@@ -53,14 +53,28 @@ OpenRefine supports faceted browsing as a mechanism for
 
 Typically, you create a facet on a particular column. The facet summarizes the cells in that column to give you a big picture on that column, and allows you to filter to some subset of rows for which their cells in that column satisfy some constraint. That's a bit abstract, so let's jump into some examples.
 
-[More on faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
-
-````
+```
   - Scroll over to the scientificName column
   - Click the down arrow and choose > Facet > Text facet
   - In the left margin, you'll see a box containing every unique, distinct value in the scientificName column and Refine shows you how many times that value occurs in the column (a count), and allows you to sort (order) your facets by name or count.
   - Edit. Note that at any time, in any cell of the Facet box, or data cell in the Refine window, you have access to "edit" and can fix an error immediately. Refine will even ask you if you'd like to make that same correction to every value it finds like that one (or not).
-````
+```
+
+All our data is currently text. But, we can convert our data to other datatypes and use facets specific to them.
+- Convert 'plot' to numeric: **> Edit Cells > Common Transforms... > To number**
+- Now we can use the Numeric Facet and get a quick chart of the frequency of samples in each plot.
+
+### Practice: Editing with Facets
+
+```
+- How many rows are there with ‘species’ = ‘AB’ AND ‘country’ = ‘Australia’?
+- With only a ‘country’ text facet applied, try to fix the duplicates for ‘UNITED STATES’ (prefer this capitalised version). Can you use any Clustering methods, or must you manually edit them?
+- After merging duplicates, how many rows have ‘country’ = ‘UNITED STATES’?
+
+Put up a green sticker when you're done!
+```
+
+[More on faceting](https://github.com/OpenRefine/OpenRefine/wiki/Faceting)
 
 ## Cluster
 
@@ -74,23 +88,29 @@ In OpenRefine, clustering refers to the operation of "finding groups of differen
   - In this example, in the scientificName Text Facet we created in the step above, click the _Cluster_ button.
   - In the resulting pop-up window, you can change the algorithm method, and keying function. Try different combinations to see the difference.
   - For example, with this dataset, the _nearest neighbor_ method with the _PPM_ keying function shows the power of clustering the best. 
-  - Intentional errors in these scientific names have been introduced to show how errors (typos) in any position can be found with this method. All errors can then be fixed by simply entering the correct value in the box on the right. Often, the algorithm has guessed correctly. 
+  - Intentional errors in these scientific names have been introduced to show how errors (typos) in any position can be found with this method. All errors can then be fixed by simply clicking the correct value or entering it in the box on the right. Often, the algorithm has guessed correctly. 
   - After corrections are made in this window, you can either Merge and Close the Cluster pop-up, or Merge and Re-cluster.
-````
+  - Go ahead and 'merge & recluster' values as you please until no more results are found
+```
 
 ## Split / Leading - Trailing Whitespace / Undo - Redo
 
-If data in a column needs to be split into multiple columns, and the strings in the cells are separated by a common separator (say a comma, or a space), you can use that separator to divide up the bits into their own columns.
+In the next part of this lesson, we're going to introduce three features, and together these show a typical Open Refine workflow.
 
-````
-  - Go to the drop-down tab at the top of the column that you need to split into multiple columns
-  - For example, go to the scientificName column > from drop-down choose Edit Column > Split into several columns
+1. Split 'Scientific name' into several columns
+2. Check for what went wrong & undo
+3. Fix an error (remove leading whitespace)
+4. Try again
+
+```
+  - Go to the scientificName column > from drop-down choose Edit Column > Split into several columns
   - In the pop-up, for separator, remove the comma, put in a space
   - Remove the check in the box that says "remove column after splitting"
   - You'll get two extra columns called, in this case: scientificName 1, scientificName 2
-  - This will reveal an error in a few names that have spaces at the beginning (so-called leading white space).
-  - These can be easily removed with another Refine feature in the column drop-down choices. See drop-down: Edit cells > Common transforms > Remove leading and trailing whitespace
+  - However, it will reveal a problem in a few names that have spaces at the beginning (so-called leading white space), causing unwanted additional columns to be created.
   - To Undo create columns, look just above the scientificName cluster in the left side of the screen. Click where it says Undo / Redo. Click back one step (all steps, all changes are saved here). Just go back to the previous step and click. The extra columns will be gone.
-````
+  The leading whitespaces can be easily removed with another Refine feature in the column drop-down choices. Select: Edit cells > Common transforms > Remove leading and trailing whitespace
+  - Check the result looks right!
+```
 
 Previous: [Getting Started with OpenRefine](00-getting-started.html)  Next: [Scripts from OpenRefine](02-scripts.html)
