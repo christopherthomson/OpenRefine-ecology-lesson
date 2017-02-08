@@ -26,6 +26,7 @@ To create a project,
 - Click Browse, find Portal_rodents_19772002_scinameUUIDs.csv
 - Click next to open Portal_rodents_19772002_scinameUUIDs.csv
 - Refine gives you a preview - a chance to show you it understood the file. If, for example, your file was really tab-delimited, the preview might look strange, you would choose the correct separator in the box shown and click "update preview."
+- At this stage you can also give your project a readable name
 - If all looks well, click _Create Project._
 
 ## Faceting
