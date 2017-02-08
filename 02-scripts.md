@@ -17,10 +17,10 @@ minutes:
   - Copy the code and paste it into a text editor. Save it as a .txt file. 
 
 ### Open a new project from scratch
-- Right click on the Open Refine logo at top right
-- We'll create a new project with our same Rodents data, as just to test how this works.
-- But this time we'll create the project from a web address
-- Copy the link to the Rodents data stored in Dropbox and paste it into Open Refine but don't click 'Next' yet
+- Right click on the Open Refine logo at top right and open the link in a new tab
+- We'll create a new project here with our same Rodents data, as just to test how this works. But, this time we'll create the project from a web address
+- Go back to the previous lesson page 'Working with Open Refine', copy the link to the Rodents data stored in Dropbox 
+- When creating the project choose 'Web Addresses (URLs)' as your data source. Paste your copied URL but don't click 'Next' yet
 - In the URL, replace the 'www' with 'dl', then click Next.
 - Create a new project, perhaps named 'More Rodents'?
 
