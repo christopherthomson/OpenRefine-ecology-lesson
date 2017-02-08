@@ -7,7 +7,7 @@ minutes:
 
 # Lesson
 
-## Scripts
+## Automate your work with scripts
 
 * Refine saves every change, every edit you make to the dataset in a file you can save on your machine.
 * If you had 20 files to clean, and they all had the same type of errors, and all files had the same columns, you could save the script, open a new file to clean, paste in the script and run it. Voila, clean data.
